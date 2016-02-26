@@ -1,0 +1,14 @@
+{
+  "name": "meShare Login Fix",
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "description": "Fixes login page on meShare to allow emails with TLD like .name .info etc...",
+  
+  "content_scripts": [
+    {
+      "matches": ["https://user.meshare.com/user/login"],
+      "js": ["contentscript.js"]
+    }
+  ],
+  "web_accessible_resources" : ["script.js"]
+}
